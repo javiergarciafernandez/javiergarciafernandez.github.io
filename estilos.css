@@ -1,0 +1,268 @@
+/* Reseteo de márgenes y padding para un mejor control del diseño */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background: #8fe5e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+    text-align: center;
+}
+
+body {
+    background: #8fe5e2;
+}
+
+/* Estilo del título */
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+    color: #fff;
+    background: linear-gradient(45deg, #f78ca0, #f9d423);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Efecto de brillo sutil */
+.titulo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    animation: brillo 1.5s infinite linear;
+}
+
+/* Animación de brillo */
+@keyframes brillo {
+    0% { left: -100%; }
+    50% { left: 100%; }
+    100% { left: -100%; }
+}
+
+/* Efecto al pasar el ratón sobre el título */
+.titulo:hover {
+    transform: scale(1.1) rotate(3deg);
+    color: #f9d423;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+   
+}
+.imagen
+    img {
+        width: 700px; 
+        height: auto; 
+        margin-left: 25%;
+        margin-right: 45%;
+        margin-top: 1%;
+    }
+    article{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+       text-align: justify;
+        gap:20px;
+        margin-top: 5%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    
+    
+    .enlaces{
+    margin: left 10%;
+    }
+    .contenedor1 {
+        display: flex;
+        gap: 30px;
+         text-align: justify;
+        
+    }
+    .columna {
+        flex: 1; /* Las columnas ocuparán el mismo espacio */
+        padding: 20px;
+        border: 3px solid #ffb702;
+       
+    
+    }
+    .columna2{
+        margin-left:10%;
+    }
+    
+    /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+.conteiner3 {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e6e9f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1), -8px -8px 20px rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.form-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+/* Estilo de los grupos de campos */
+.form-group {
+    margin-bottom: 28px;
+    text-align: left;
+    position: relative;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los inputs, selects y textareas (Neumorfismo) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.1), inset -6px -6px 10px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+                0 0 6px rgba(76, 175, 80, 0.4);
+    outline: none;
+}
+
+/* Estilo de los textareas */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo de los checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botón de envío */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Efecto de hover en el formulario */
+.form-container:hover .submit-btn {
+    background-color: #388e3c;
+}
+
+/* Estilo para los términos */
+input[type="checkbox"]:checked + label {
+    color: #4CAF50;
+}
+
+/* Validación de los campos: si el campo está vacío, marcarlo con borde rojo */
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border: 2px solid #ff5c5c;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+    border: 2px solid #4CAF50;
+}
+
+/* Último grupo sin margen inferior */
+.form-group:last-child {
+    margin-bottom: 0;
+}
